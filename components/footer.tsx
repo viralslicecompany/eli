@@ -1,0 +1,31 @@
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="py-8 px-4 md:px-12">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="text-zinc-600 text-sm mb-2 md:mb-0">
+          &copy; {new Date().getFullYear()} Bowmedia by Eli Bowman. All rights reserved.
+        </div>
+        <div className="flex gap-5">
+          <Link href="https://facebook.com" target="_blank" aria-label="Facebook" className="text-zinc-600 hover:text-white transition-colors">
+            <Facebook className="w-5 h-5" />
+          </Link>
+          <Link href="https://twitter.com" target="_blank" aria-label="Twitter" className="text-zinc-600 hover:text-white transition-colors">
+            <Twitter className="w-5 h-5" />
+          </Link>
+          <Link href="https://instagram.com" target="_blank" aria-label="Instagram" className="text-zinc-600 hover:text-white transition-colors">
+            <Instagram className="w-5 h-5" />
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn" className="text-zinc-600 hover:text-white transition-colors">
+            <Linkedin className="w-5 h-5" />
+          </Link>
+          <Link href="https://youtube.com" target="_blank" aria-label="YouTube" className="text-zinc-600 hover:text-white transition-colors">
+            <Youtube className="w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+}

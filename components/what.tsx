@@ -9,7 +9,7 @@ export default function What() {
           {/* Main Heading */}
           <div className="flex-grow flex items-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Eli equals results
+              Eli is results-driven
             </h1>
           </div>
         </div>
@@ -19,23 +19,21 @@ export default function What() {
           {/* Descriptive Text */}
           <div className="prose prose-lg">
             <p className="leading-relaxed">
-              Join over 100 million people around the world who are achieving
-              the extraordinary with Tony's tools. Their stories paint the
-              picture of what's possible for you, too. A study from Stanford
-              University's Snyder Lab of Genetics revealed lasting benefits for
-              event attendees including:
+              Join over thousands of people around the world who are achieving
+              the extraordinary with Eli's tools. Their stories paint the
+              picture of what's possible for you, too.
             </p>
           </div>
 
           {/* Statistics */}
           <div className="grid grid-cols-2 gap-8">
-            <div className="text-center">
+            <div className="">
               <div className="text-6xl md:text-7xl font-bold mb-2">300%</div>
               <div className="text-sm font-medium">
                 increase in cognitive performance
               </div>
             </div>
-            <div className="text-center">
+            <div className="">
               <div className="text-6xl md:text-7xl font-bold mb-2">139%</div>
               <div className="text-sm font-medium">
                 increase in performance biochemistry

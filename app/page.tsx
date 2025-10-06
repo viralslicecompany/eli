@@ -1,8 +1,8 @@
 import Hero from "@/components/hero";
 import Events from "@/components/events";
-import Upcoming from "@/components/upcoming";
 import Meet from "@/components/meet";
 import What from "@/components/what";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Events />
         <Meet />
         <What />
+        <Footer />
       </main>
     </>
   );

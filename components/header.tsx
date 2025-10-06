@@ -20,7 +20,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-background border-b sticky top-0 z-50">
+    <header className="bg-background sticky top-0 z-50">
       <div className="px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" aria-label="Home">
@@ -81,7 +81,10 @@ export default function Header() {
             <DropdownMenuContent align="end" className="w-48">
               {aboutLinks.map((link) => (
                 <DropdownMenuItem asChild key={link.href}>
-                  <Link href={link.href} onClick={() => setMobileMenuOpen(false)}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     {link.label}
                   </Link>
                 </DropdownMenuItem>
@@ -97,7 +100,10 @@ export default function Header() {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/book-a-call" onClick={() => setMobileMenuOpen(false)}>
+                <Link
+                  href="/book-a-call"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   <span className="font-semibold">Book a Call</span>
                 </Link>
               </DropdownMenuItem>
