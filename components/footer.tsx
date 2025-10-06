@@ -10,19 +10,19 @@ export default function Footer() {
         </div>
         <div className="flex gap-5">
           <Link href="https://facebook.com" target="_blank" aria-label="Facebook" className="text-zinc-600 hover:text-white transition-colors">
-            <Facebook className="w-5 h-5" />
+            <Facebook className="size-5" />
           </Link>
           <Link href="https://twitter.com" target="_blank" aria-label="Twitter" className="text-zinc-600 hover:text-white transition-colors">
-            <Twitter className="w-5 h-5" />
+            <Twitter className="size-5" />
           </Link>
           <Link href="https://instagram.com" target="_blank" aria-label="Instagram" className="text-zinc-600 hover:text-white transition-colors">
-            <Instagram className="w-5 h-5" />
+            <Instagram className="size-5" />
           </Link>
           <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn" className="text-zinc-600 hover:text-white transition-colors">
-            <Linkedin className="w-5 h-5" />
+            <Linkedin className="size-5" />
           </Link>
           <Link href="https://youtube.com" target="_blank" aria-label="YouTube" className="text-zinc-600 hover:text-white transition-colors">
-            <Youtube className="w-5 h-5" />
+            <Youtube className="size-5" />
           </Link>
         </div>
       </div>

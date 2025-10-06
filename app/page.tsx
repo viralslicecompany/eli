@@ -3,6 +3,7 @@ import Events from "@/components/events";
 import Meet from "@/components/meet";
 import What from "@/components/what";
 import Footer from "@/components/footer";
+import CTA from "@/components/cta";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Events />
         <Meet />
         <What />
+        <CTA />
         <Footer />
       </main>
     </>
