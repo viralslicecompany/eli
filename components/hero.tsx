@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative flex flex-col justify-end min-h-[500px] md:min-h-[600px] rounded-xl mx-2 md:mx-8 overflow-hidden bg-black">
+    <div className="relative flex flex-col justify-end min-h-[500px] md:min-h-[800px] rounded-xl mx-4 md:mx-16 overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
         <Image
           src="/eli-bowman.jpg"

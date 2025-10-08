@@ -1,169 +1,94 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
+const services = [
+  {
+    title: "1:1 Coaching Call",
+    subtitle: "Personalized guidance to unlock your next level.",
+    image: "/events/business-mastery.jpg",
+    cta: {
+      label: "Book a Call",
+      href: "/book-a-call",
+    },
+    tag: "ELI BOWMAN",
+  },
+  {
+    title: "Speaking Events",
+    subtitle: "Have Eli speak at your event.",
+    image: "/events/speaking-events.jpg",
+    cta: {
+      label: "Book a Call",
+      href: "/book-a-call",
+    },
+    tag: "ELI BOWMAN",
+  },
+  {
+    title: "Mindset Reset",
+    subtitle: "Rewire your thinking for lasting change.",
+    image: "/events/business-mastery.jpg",
+    cta: {
+      label: "Start Now",
+      href: "/mindset-reset",
+    },
+    tag: "ELI BOWMAN",
+  },
+];
+
 export default function Events() {
   return (
     <section className="py-12 px-4 md:px-12">
-      <div className="flex items-center justify-between mb-8">
-        <h2 className="text-white text-2xl md:text-3xl font-medium">
-          Events that <span className="italic font-light">liberate</span>
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
+        <h2 className="text-white text-2xl md:text-3xl font-semibold drop-shadow-sm">
+          Services that <span className="italic font-light">liberate</span>
         </h2>
         <Link
           href="/"
-          className="text-gray-300 hover:text-white text-sm flex items-center gap-1 transition-colors"
+          className="text-zinc-400 hover:text-white text-sm flex items-center gap-1 transition-colors font-medium"
         >
-          Discover events <ChevronRight className="size-4" />
+          Discover all services <ChevronRight className="size-4" />
         </Link>
       </div>
       <div className="relative">
-        <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
-          {/* Event Card 1 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/business-mastery.jpg"
-                alt="Business Mastery"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                BUSINESS MASTERY
-              </div>
-              <div className="text-gray-300 text-sm">
-                Grow your business exponentially.
-              </div>
-            </div>
-          </div>
-          {/* Event Card 2 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/leadership-academy.jpg"
-                alt="Leadership Academy"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                LEADERSHIP ACADEMY
-              </div>
-              <div className="text-gray-300 text-sm">
-                Become an impactful leader.
+        <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-gradient-to-br from-[#181818] to-[#2c2c2c] p-[2px] rounded-2xl shadow-xl transition-transform hover:scale-[1.025] active:scale-100"
+              style={{ height: 440 }}
+            >
+              <div className="bg-[#181818] rounded-2xl overflow-hidden flex flex-col h-full">
+                {/* Image section */}
+                <div className="relative w-full" style={{ height: 160 }}>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="object-cover w-full h-full rounded-t-2xl"
+                    style={{ objectPosition: "center" }}
+                  />
+                  <div className="absolute top-3 left-3 bg-black/60 text-xs text-white px-3 py-1 rounded-full tracking-widest font-semibold shadow">
+                    {service.tag}
+                  </div>
+                </div>
+                {/* Content section: align content to the bottom */}
+                <div className="flex flex-col flex-1 p-5 justify-end">
+                  <div>
+                    <div className="text-lg md:text-xl font-bold text-white mb-1 leading-tight uppercase tracking-tight">
+                      {service.title}
+                    </div>
+                    <div className="text-zinc-300 text-sm mb-4">
+                      {service.subtitle}
+                    </div>
+                  </div>
+                  <Link
+                    href={service.cta.href}
+                    className="inline-block text-center font-semibold py-2 px-4 rounded-lg shadow transition-colors text-base bg-gradient-to-r from-zinc-800 to-zinc-700 hover:from-zinc-700 hover:to-zinc-800 text-white mt-2"
+                  >
+                    {service.cta.label}
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          {/* Event Card 3 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/date-with-destiny.jpg"
-                alt="Date with Destiny"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                DATE WITH DESTINY
-              </div>
-              <div className="text-gray-300 text-sm">
-                Create the life according to you.
-              </div>
-            </div>
-          </div>
-          {/* Event Card 4 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/unleash-the-power.jpg"
-                alt="Unleash the Power Within"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                UNLEASH THE POWER WITHIN
-              </div>
-              <div className="text-gray-300 text-sm">
-                Escape limits, rediscover growth.
-              </div>
-            </div>
-          </div>{" "}
-          {/* Event Card 4 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/unleash-the-power.jpg"
-                alt="Unleash the Power Within"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                UNLEASH THE POWER WITHIN
-              </div>
-              <div className="text-gray-300 text-sm">
-                Escape limits, rediscover growth.
-              </div>
-            </div>
-          </div>{" "}
-          {/* Event Card 4 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/unleash-the-power.jpg"
-                alt="Unleash the Power Within"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                UNLEASH THE POWER WITHIN
-              </div>
-              <div className="text-gray-300 text-sm">
-                Escape limits, rediscover growth.
-              </div>
-            </div>
-          </div>{" "}
-          {/* Event Card 4 */}
-          <div className="min-w-[220px] max-w-[260px] bg-[#181818] rounded-xl shadow-lg overflow-hidden flex-shrink-0">
-            <div className="h-40 w-full relative">
-              <img
-                src="/events/unleash-the-power.jpg"
-                alt="Unleash the Power Within"
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="p-4">
-              <div className="text-xs text-gray-400 mb-1 tracking-widest">
-                ELI BOWMAN
-              </div>
-              <div className="text-lg font-bold text-white mb-2 leading-tight">
-                UNLEASH THE POWER WITHIN
-              </div>
-              <div className="text-gray-300 text-sm">
-                Escape limits, rediscover growth.
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
