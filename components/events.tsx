@@ -1,11 +1,12 @@
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
   {
     title: "1:1 Coaching Call",
     subtitle: "Personalized guidance to unlock your next level.",
-    image: "/events/business-mastery.jpg",
+    image: "/images/eli-example1.png",
     cta: {
       label: "Book a Call",
       href: "/book-a-call",
@@ -15,7 +16,7 @@ const services = [
   {
     title: "Speaking Events",
     subtitle: "Have Eli speak at your event.",
-    image: "/events/speaking-events.jpg",
+    image: "/images/eli-example2.png",
     cta: {
       label: "Book a Call",
       href: "/book-a-call",
@@ -25,7 +26,7 @@ const services = [
   {
     title: "Mindset Reset",
     subtitle: "Rewire your thinking for lasting change.",
-    image: "/events/business-mastery.jpg",
+    image: "/images/eli-example3.png",
     cta: {
       label: "Start Now",
       href: "/mindset-reset",
@@ -58,10 +59,12 @@ export default function Events() {
             >
               <div className="bg-[#181818] rounded-2xl overflow-hidden flex flex-col h-full">
                 {/* Image section */}
-                <div className="relative w-full" style={{ height: 160 }}>
-                  <img
+                <div className="relative w-full" style={{ height: "500px" }}>
+                  <Image
                     src={service.image}
                     alt={service.title}
+                    fill
+                    priority
                     className="object-cover w-full h-full rounded-t-2xl"
                     style={{ objectPosition: "center" }}
                   />

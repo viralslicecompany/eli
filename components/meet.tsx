@@ -2,23 +2,23 @@ import Image from "next/image";
 
 export default function Meet() {
   return (
-    <section className="py-16 px-4 md:px-12 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 bg-white">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <span className="text-sm font-medium text-gray-400 uppercase tracking-wider">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <span className="text-xs sm:text-sm font-medium text-gray-400 uppercase tracking-wider">
             Meet
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-black mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mt-2">
             Eli Bowman
           </h2>
         </div>
 
         {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-start">
           {/* Image */}
-          <div className="flex justify-center md:justify-end">
-            <div className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+          <div className="flex justify-center">
+            <div className="w-full max-w-xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/eli.jpg"
                 alt="Eli Bowman"
@@ -32,71 +32,77 @@ export default function Meet() {
 
           {/* Text */}
           <div className="flex flex-col justify-center">
-            <p className="text-gray-600 text-lg leading-relaxed space-y-4">
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed space-y-4">
               <span className="block">
-                Eli is a life coach, entrepreneur, and certified Aspire Tour
-                speaker who's passionate about helping people close the gap
-                between where they are now and where they want to be.
+                Eli Bowman is a top-selling author, certified Aspire Tour speaker, 
+                and 7-figure entrepreneur who helps people bridge the gap between 
+                their current reality and their dream life. As the creator of the 
+                Path of Purpose Framework, he's passionate about helping people 
+                close the gap between where they are now and where they want to be.
               </span>
               <span className="block">
-                After hitting rock bottom through self-destructive patterns
-                rooted in negative mental programming, Eli made the decision to
-                transform his life. He learned to identify and reframe the
-                limiting beliefs holding him back, eventually building a startup
-                from the ground up into a multi-million dollar company with over
-                40 employees.
+                After hitting rock bottom through self-destructive decisions driven 
+                by negative mental programming, Eli transformed his life by 
+                reframing and uninstalling these limiting beliefs. He ultimately 
+                bootstrapped a startup to a multi-million dollar valuation with 
+                over 40 employees.
               </span>
               <span className="block">
                 But here's what he discovered: business success alone wasn't
-                enough. Despite achieving everything he thought he wanted,
-                something was missing. That realization led him to his true
-                calling—helping others break through their own barriers and find
-                genuine fulfillment.
+                enough. Despite this external success, he discovered business 
+                achievements alone lacked true purpose. That realization led him 
+                to his real calling—guiding others to identify and remove what 
+                blocks their path to fulfillment.
               </span>
               <span className="block">
-                His upcoming book, <span className="italic">Rewrite The Program</span>, lays out a
-                transformative framework that walks readers through
-                understanding their childhood programming, navigating the
-                necessary unlearning process, and amplifying their authentic
-                voice to make a real impact.
+                As a master in neuro-linguistic programming (NLP), Eli specializes 
+                in revealing fascinating insights about the brain and unconscious 
+                mind that create powerful transformation moments for his clients 
+                and audiences.
+              </span>
+              <span className="block">
+                His upcoming book, <span className="italic">Rewrite The Program</span>, offers a 
+                groundbreaking framework that guides readers through understanding 
+                childhood programming, navigating necessary deconstruction, and 
+                amplifying their authentic voice for global impact.
               </span>
             </p>
           </div>
         </div>
 
         {/* Featured On */}
-        <div className="mt-16 text-center">
-          <span className="text-sm font-medium text-gray-400 uppercase tracking-wider mb-6 block">
+        <div className="mt-12 sm:mt-16 md:mt-20 text-center">
+          <span className="text-xs sm:text-sm font-medium text-gray-400 uppercase tracking-wider mb-6 block">
             Featured On
           </span>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12">
             <Image
               src="/logos/forbes.png"
               alt="Forbes"
               width={90}
               height={32}
-              className="h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
             />
             <Image
               src="/logos/entrepreneur.png"
               alt="Entrepreneur"
               width={120}
               height={32}
-              className="h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
             />
             <Image
               src="/logos/inc.png"
               alt="Inc."
               width={60}
               height={32}
-              className="h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
             />
             <Image
               src="/logos/fastcompany.png"
               alt="Fast Company"
               width={120}
               height={32}
-              className="h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100 transition"
             />
           </div>
         </div>

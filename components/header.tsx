@@ -20,8 +20,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-background sticky top-0 z-50">
-      <div className="px-6 py-4 flex justify-between items-center">
+    <header className="bg-background sticky top-0 z-50 border-b border-white/5">
+      <div className="px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center mx-auto">
         {/* Logo */}
         <Link href="/" aria-label="Home">
           <Image
@@ -29,7 +29,7 @@ export default function Header() {
             alt="Eli Bowman"
             width={120}
             height={40}
-            className="h-4 w-auto"
+            className="h-3 sm:h-4 w-auto"
             priority
           />
         </Link>

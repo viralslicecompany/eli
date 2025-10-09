@@ -4,6 +4,7 @@ import Meet from "@/components/meet";
 import What from "@/components/what";
 import Footer from "@/components/footer";
 import CTA from "@/components/cta";
+import Pillars from "@/components/pillars";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
         <Hero />
         {/* <Upcoming /> */}
         <Events />
-        <Meet />
+        <Pillars />
         <What />
+        <Meet />
         <CTA />
         <Footer />
       </main>

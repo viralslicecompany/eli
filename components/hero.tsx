@@ -58,7 +58,7 @@ export default function Hero() {
                 size="sm"
                 className="mt-2 w-full cursor-pointer bg-gradient-to-r from-pink-500 to-blue-500 text-white rounded-full shadow hover:from-pink-600 hover:to-blue-600 transition text-xs md:text-sm"
               >
-                Learn More
+                Get Tickets
               </Button>
             </Link>
           </div>
