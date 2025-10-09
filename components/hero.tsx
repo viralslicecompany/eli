@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="relative flex flex-col justify-end min-h-[400px] md:min-h-[800px] rounded-xl mx-2 sm:mx-4 md:mx-4 overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/eli-bowman.jpg"
+          src="/images/eli-bowman.jpg"
           alt="Background"
           fill
           style={{ objectFit: "cover", objectPosition: "top" }}

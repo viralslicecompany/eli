@@ -20,7 +20,7 @@ export default function Meet() {
           <div className="flex justify-center">
             <div className="w-full max-w-xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/eli.jpg"
+                src="/images/eli.jpg"
                 alt="Eli Bowman"
                 width={400}
                 height={533}
