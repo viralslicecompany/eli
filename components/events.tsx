@@ -39,7 +39,7 @@ export default function Events() {
     <section className="py-12 px-4 md:px-12">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
         <h2 className="text-white text-2xl md:text-3xl font-semibold drop-shadow-sm">
-          Services that <span className="italic font-light">liberate</span>
+          Collaborate with us
         </h2>
         <Link
           href="/"
