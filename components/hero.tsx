@@ -24,12 +24,11 @@ export default function Hero() {
           <br />
           <span className="font-light">Step into life.</span>
         </h1>
-        <Button
-          size="lg"
-          className="w-full sm:w-auto text-base sm:text-lg"
-        >
-          Book a Call
-        </Button>
+        <Link href="https://intro.co/EliBowman?source=intro">
+          <Button size="lg" className="w-full sm:w-auto text-base sm:text-lg">
+            Book a Call
+          </Button>
+        </Link>
       </div>
 
       {/* Event Card: Responsive positioning and sizing */}
@@ -49,11 +48,17 @@ export default function Hero() {
             </div>
           </div>
           <div className="p-2 md:p-3">
-            <div className="text-[10px] md:text-xs text-white/80 mb-1 font-medium">ELI BOWMAN</div>
+            <div className="text-[10px] md:text-xs text-white/80 mb-1 font-medium">
+              ELI BOWMAN
+            </div>
             <div className="text-base md:text-lg font-bold text-white leading-tight mb-1">
               ASPIRE TOUR
             </div>
-            <Link href="https://register.aspiretour.com/colu-lp-v4" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://register.aspiretour.com/colu-lp-v4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 size="sm"
                 className="mt-2 w-full cursor-pointer bg-gradient-to-r from-pink-500 to-blue-500 text-white rounded-full shadow hover:from-pink-600 hover:to-blue-600 transition text-xs md:text-sm"

@@ -6,32 +6,32 @@ const services = [
   {
     title: "1:1 Coaching Call",
     subtitle: "Personalized guidance to unlock your next level.",
-    image: "/images/eli-example1.png",
+    image: "/images/eli-coaching.png",
     cta: {
       label: "Book a Call",
-      href: "/book-a-call",
+      href: "https://intro.co/EliBowman?source=intro",
     },
-    tag: "ELI BOWMAN",
+    tag: "COACHING",
   },
   {
     title: "Speaking Events",
     subtitle: "Have Eli speak at your event.",
-    image: "/images/eli-example2.png",
+    image: "/images/eli-speaking.png",
     cta: {
-      label: "Book a Call",
-      href: "/book-a-call",
+      label: "Book Speaking",
+      href: "mailto:eliotbowman@gmail.com",
     },
-    tag: "ELI BOWMAN",
+    tag: "SPEAKING",
   },
   {
-    title: "Mindset Reset",
+    title: "Rewrite The Program",
     subtitle: "Rewire your thinking for lasting change.",
-    image: "/images/eli-example3.png",
+    image: "/images/eli-book.png",
     cta: {
-      label: "Start Now",
-      href: "/mindset-reset",
+      label: "Coming Now",
+      href: "#",
     },
-    tag: "ELI BOWMAN",
+    tag: "NEW BOOK",
   },
 ];
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function What() {
@@ -28,13 +29,17 @@ export default function What() {
           {/* Statistics */}
           <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">300%</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">
+                300%
+              </div>
               <div className="text-xs sm:text-sm font-medium">
                 increase in cognitive performance
               </div>
             </div>
             <div>
-              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">139%</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">
+                139%
+              </div>
               <div className="text-xs sm:text-sm font-medium">
                 increase in performance biochemistry
               </div>
@@ -43,9 +48,9 @@ export default function What() {
 
           {/* Call-to-Action Button */}
           <div className="pt-4">
-            <Button className="w-full sm:w-auto">
-              Learn more
-            </Button>
+            <Link href="/about/story">
+              <Button className="w-full sm:w-auto">Learn more</Button>
+            </Link>
           </div>
         </div>
       </div>

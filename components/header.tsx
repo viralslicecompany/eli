@@ -13,7 +13,7 @@ import { useState } from "react";
 
 const aboutLinks = [
   { href: "/about/story", label: "The Story" },
-  { href: "/about/company", label: "The Company" },
+  // { href: "/about/company", label: "The Company" },
 ];
 
 export default function Header() {
@@ -50,23 +50,23 @@ export default function Header() {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-
+{/* 
           <Link
             href="/press"
             className="text-sm font-medium hover:text-zinc-300 transition-colors"
           >
             Press
-          </Link>
+          </Link> */}
 
           <Link
-            href="/contact"
+            href="mailto:eliotbowman@gmail.com"
             className="text-sm font-medium hover:text-zinc-300 transition-colors"
           >
             Contact
           </Link>
 
           <Button asChild>
-            <Link href="/book-a-call">Book a Call</Link>
+            <Link href="https://intro.co/EliBowman?source=intro">Book a Call</Link>
           </Button>
         </nav>
 
