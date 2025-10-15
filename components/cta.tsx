@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function CTA() {
@@ -17,9 +18,11 @@ export default function CTA() {
           Book a call with Eli and start your journey to extraordinary
           performance today.
         </p>
+        <Link href="https://intro.co/EliBowman?source=intro">
         <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 font-medium shadow-xl mt-4 sm:mt-6 w-full sm:w-auto max-w-xs">
           Book a Call
         </Button>
+        </Link>
       </div>
     </section>
   );
